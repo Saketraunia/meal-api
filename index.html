@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css" />
+    <!-- fav-icon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/web-logo.jpg"
+      type="image/x-icon"
+    />
+    <title>Discover Your Meals</title>
+  </head>
+  <body>
+    <!-- header-section-starts -->
+    <header>
+      <!-- logo-image -->
+      <div class="logo"></div>
+      <!-- Favourites-Icon -->
+      <div class="favourites">
+        <a class="fav">Favourites</a>
+        <a><ion-icon class="icon" name="heart-circle"></ion-icon></a>
+      </div>
+    </header>
+    <!-- meals-section-starts -->
+    <section class="meals">
+      <!-- heading -->
+      <div class="heading">
+        <h1>Find Your All The Meals In One Go</h1>
+      </div>
+      <!-- search-div -->
+      <div class="search">
+        <ion-icon name="search-outline"></ion-icon>
+        <input type="text" id="search-1" placeholder="Search..." />
+      </div>
+      <!-- meals-container -->
+      <div class="content"></div>
+      <p class="result">Oops: Could Not Found The Meal</p>
+    </section>
+    <!-- Get-Details Section -->
+    <section class="get-details">
+      <!-- modal-display -->
+      <div class="modal"></div>
+      <!-- details-container -->
+      <div class="container">
+        <div class="meals-image">
+          <!-- meal-image -->
+          <div class="image"></div>
+        </div>
+        <h2 class="dish-name"></h2>
+        <!-- reciepe of the meal -->
+        <div class="reciepe">
+          <p></p>
+        </div>
+        <!-- buttons -->
+        <div class="btn-container">
+          <button class="watch-vedio" type="button">Watch Vedio</button>
+          <button class="back" type="button">Back</button>
+        </div>
+      </div>
+    </section>
+    <!-- Get Details Section Ends -->
+    <!-- Favurities Section Starts -->
+    <section class="fav-meals">
+      <!-- heading -->
+      <div class="heading">
+        <h1>All Your Favourites Meals Are Here:</h1>
+      </div>
+      <!-- meals-container -->
+      <div class="content"></div>
+    </section>
+    <!-- Favourites-Section Ends -->
+
+    <!-- Ion-Icons Link -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- javascript file linked -->
+    <script src="home.js"></script>
+  </body>
+</html>

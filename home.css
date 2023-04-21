@@ -1,0 +1,319 @@
+/* google font links */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Oleo+Script+Swash+Caps&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+  background-image: url("./assets/background-1.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Dancing Script", cursive;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+:root {
+  --white: white;
+  --box-shadow-small: 0 0 5px 4px white;
+  --box-shadow-bg: 0 0 5px 6px white;
+  --text-shadow: 3px 2px black;
+}
+/* header-section starts */
+header {
+  display: flex;
+  width: 85vw;
+  height: auto;
+  align-items: center;
+  padding: 10px;
+  margin: auto;
+  margin-top: 30px;
+  justify-content: space-between;
+  background-color: transparent;
+}
+header .logo {
+  max-width: 70px;
+  width: 70px;
+  min-height: 60px;
+  background-image: url("./assets/web-logo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+  box-shadow: var(--box-shadow-small);
+}
+header .logo:hover {
+  transform: scale(1.3);
+  box-shadow: var(--box-shadow-bg);
+  cursor: pointer;
+}
+header .favourites {
+  font-size: 1.5rem;
+  color: white;
+  position: relative;
+}
+header .favourites a {
+  display: inline-block;
+}
+header .favourites:hover {
+  color: rgb(238, 198, 124);
+  transition: all 0.38s ease-in-out;
+}
+header .favourites .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 4px;
+  transition: box-shadow 0.38s ease-in-out;
+}
+header .favourites .icon:hover {
+  box-shadow: var(--box-shadow-small);
+  border-radius: 50%;
+  transform: scale(1.2);
+}
+/* Header-section ends */
+/* meal-section Starts */
+.meals,
+.fav-meals {
+  max-width: 85vw;
+  height: auto;
+  margin: auto;
+  margin-top: 10px;
+}
+/* heading-part */
+.meals .heading h1,
+.fav-meals .heading h1 {
+  text-align: center;
+  color: var(--white);
+  font-size: 2.5rem;
+  text-shadow: var(--text-shadow);
+}
+/* search-part */
+.meals .search {
+  width: 100%;
+  height: 70px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.meals .search ion-icon {
+  font-size: 1.5rem;
+  padding: 7.4px;
+  background-color: var(--white);
+  border: 2px solid black;
+  border-right: none;
+  box-shadow: var(--box-shadow-small);
+  outline: none;
+  color: gray;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.meals .search input {
+  display: inline-block;
+  font-size: 1.3rem;
+  padding: 7px;
+  width: 70%;
+  border: 2px solid black;
+  outline: none;
+  border-left: none;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: var(--box-shadow-small);
+  color: gray;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.meals .search input::placeholder {
+  color: lightgray;
+}
+.meals .search input:focus {
+  box-shadow: var(--box-shadow-bg);
+}
+/* meals-container */
+.meals .content,
+.fav-meals .content {
+  width: 100%;
+  display: flex;
+  flex: 0 1 40%;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+}
+.meals .content .meal-card,
+.fav-meals .content .meal-card {
+  width: 250px;
+  padding: 20px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.meals .content .meal-card:hover,
+.fav-meals .content .meal-card:hover {
+  box-shadow: var(--box-shadow-small);
+}
+.meals .content .meal-card h3,
+.fav-meals .content .meal-card h3 {
+  color: var(--white);
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  text-shadow: var(--text-shadow);
+}
+.meals .content .meal-card .image,
+.fav-meals .content .meal-card .image {
+  width: 110px;
+  max-width: 110px;
+  min-height: 110px;
+  border-radius: 50%;
+  transition: transform 0.38s ease-in-out;
+}
+.meals .content .meal-card .image:hover,
+.fav-meals .content .meal-card .image:hover {
+  transform: scale(1.25);
+}
+.meals .content .meal-card .image img,
+.fav-meals .content .meal-card .image img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  box-shadow: var(--box-shadow-small);
+}
+.meals .content .meal-card .button-container,
+.fav-meals .content .meal-card .button-container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.meals .content .meal-card .button-container button,
+.fav-meals .content .meal-card .button-container button {
+  font-size: 1.3rem;
+  color: var(--white);
+  background-color: gray;
+  padding: 5px;
+  border: none;
+  transition: box-shadow 0.2s ease-in-out;
+  font-family: "Dancing Script", cursive;
+  cursor: pointer;
+}
+.meals .content .meal-card .button-container button:hover,
+.fav-meals .content .meal-card .button-container button:hover {
+  box-shadow: var(--box-shadow-small);
+}
+.meals .content .meal-card .button-container ion-icon,
+.fav-meals .content .meal-card .button-container ion-icon {
+  font-size: 1.5rem;
+  color: var(--white);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.meals .content .meal-card .button-container ion-icon:hover,
+.fav-meals .content .meal-card .button-container ion-icon:hover {
+  transform: scale(1.2);
+}
+.result {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--white);
+  text-shadow: var(--text-shadow);
+  visibility: hidden;
+}
+/* meal-section-ends */
+/* get meals details start */
+.get-details {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+.get-details .modal {
+  background-color: black;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.get-details .dish-name {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.get-details .container {
+  width: 70vw;
+  height: 80vh;
+  z-index: 5;
+  position: absolute;
+  background-color: white;
+  padding: 2%;
+  box-shadow: 0 0 7px 2px rgba(31, 134, 198, 0.878);
+}
+.get-details .container .meals-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.get-details .container .image {
+  width: 120px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./assets/background-1.jpg");
+  max-width: 120px;
+  min-height: 120px;
+  box-shadow: 0 0 7px 2px rgba(89, 83, 83, 0.725);
+  transition: all 0.3s ease-in-out;
+}
+.get-details .container .image:hover {
+  transform: scale(1.2);
+}
+.get-details .container .reciepe {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  letter-spacing: 0.5px;
+  height: 32%;
+  overflow-y: scroll;
+  padding: 2%;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+.get-details .container .btn-container {
+  width: 90%;
+  margin: auto;
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.get-details .btn-container button {
+  font-size: 1.2rem;
+  padding: 1%;
+  background-color: rgb(210, 54, 54);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.655);
+  transition: all 0.3s ease-in-out;
+}
+.get-details .btn-container button:hover {
+  background-color: orangered;
+  box-shadow: 0 0 6px 4px rgb(55, 34, 34);
+}
+/* favourite-section starts */
+.fav-meals {
+  display: none;
+}
